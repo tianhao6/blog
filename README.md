@@ -1,37 +1,56 @@
-## TIANHAOSIX'S BLOG
+---
+home: true
+modules:
+  - BannerBrand
+  - MdContent
+  - Footer
+bannerBrand:
+  heroImage: /logo.png
+  heroImageStyle:
+    maxWidth: '200px'
+    width: '100%'
+    display: block
+    margin: '0 auto 2rem'
+    borderRadius: '1rem'
+  bgImage: '/bg.svg'
+  heroText: vuepress-reco
+  tagline: 一款 vuepress 主题容器，集成多种主题底层功能，快速生成主题风格。主题 2.0 的默认风格是原主题 1.0 迁移而来，更多风格正在路上，敬请期待。
+  buttons:
+    - { text: Guide, link: '/docs/guide/introduce' }
+    - { text: Default Style, link: '/docs/style-default-api/introduce', type: 'plain' }
+isShowTitleInHome: true
+actionText: About
+actionLink: /views/other/about
+features:
+- title: 过去
+  details: 开发一款看着开心、写着顺手的 vuepress 博客主题。
+- title: 当下
+  details: 帮助更多的朋友节省时间去用心书写内容，而不是仅仅配置一个博客去孤芳自赏。
+- title: 未来
+  details: 吸引更多的朋友参与到开发中来，继续强大功能。
+---
 
-You can use the [editor on GitHub](https://github.com/w78971824/tianhao.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## 快速开始
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**npx**
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+# 初始化，并选择 2.x
+npx @vuepress-reco/theme-cli init
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+**npm**
 
-### Jekyll Themes
+```bash
+# 初始化，并选择 2.x
+npm install @vuepress-reco/theme-cli@1.0.7 -g
+theme-cli init
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/w78971824/tianhao.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+**yarn**
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```bash
+# 初始化，并选择 2.x
+yarn global add @vuepress-reco/theme-cli@1.0.7
+theme-cli init
+```
